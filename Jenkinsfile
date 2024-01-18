@@ -42,7 +42,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'ssh root@172.31.37.35'
-                sh "scp /home/slave2/workspace/weather-update_Develop/target/bus-booking-app-1.0-SNAPSHOT.jar root@172.31.37.35:/root/apache-tomcat-8.5.98/webapps/"
+                sh "scp /home/slave2/workspace/weather-update_Develop/target/weather-forecast-app-1.0-SNAPSHOT.jar root@172.31.37.35:/root/apache-tomcat-8.5.98/webapps/"
             }
         }
         
